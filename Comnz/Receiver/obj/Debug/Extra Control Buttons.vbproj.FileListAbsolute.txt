@@ -1,0 +1,11 @@
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\bin\Debug\Extra Control Buttons.exe
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\bin\Debug\Extra Control Buttons.pdb
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\bin\Debug\Extra Control Buttons.xml
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra Control Buttons.vbprojAssemblyReference.cache
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra_Control_Buttons.Form1.resources
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra_Control_Buttons.Resources.resources
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra Control Buttons.vbproj.GenerateResource.cache
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra Control Buttons.vbproj.CoreCompileInputs.cache
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra Control Buttons.exe
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra Control Buttons.xml
+C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Extra Control Buttons.pdb

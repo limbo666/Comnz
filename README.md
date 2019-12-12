@@ -12,4 +12,13 @@ A lua script for Nodemcu (*firmware*) based ESP8266 based modules is provided as
 
 ![](https://raw.githubusercontent.com/limbo666/Comnz/master/Screens/screen1.png)
 
+
+
 ![](https://github.com/limbo666/Comnz/blob/master/Screens/screen2.png?raw=true)
+
+
+
+Below you can see a working prototype with two huge copy and paste buttons created for my desk.
+
+![](https://raw.githubusercontent.com/limbo666/Comnz/master/Photos/Copy-Paste%20Prototype.jpg)
+

@@ -52,6 +52,7 @@ Partial Class FrmMAin
         Me.Pnl2 = New System.Windows.Forms.Panel()
         Me.Pnl1 = New System.Windows.Forms.Panel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -71,6 +72,15 @@ Partial Class FrmMAin
         Me.P1 = New System.Windows.Forms.Panel()
         Me.Lnk1 = New System.Windows.Forms.LinkLabel()
         Me.TmrRefreshGUI = New System.Windows.Forms.Timer(Me.components)
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.updnPort, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -85,6 +95,7 @@ Partial Class FrmMAin
         Me.P3.SuspendLayout()
         Me.P2.SuspendLayout()
         Me.P1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'updnPort
@@ -238,7 +249,7 @@ Partial Class FrmMAin
         Me.GroupBox3.Controls.Add(Me.CheckBox3)
         Me.GroupBox3.Location = New System.Drawing.Point(19, 12)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(363, 87)
+        Me.GroupBox3.Size = New System.Drawing.Size(363, 79)
         Me.GroupBox3.TabIndex = 13
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Options"
@@ -246,7 +257,7 @@ Partial Class FrmMAin
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(88, 54)
+        Me.CheckBox4.Location = New System.Drawing.Point(88, 45)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(115, 17)
         Me.CheckBox4.TabIndex = 1
@@ -309,6 +320,7 @@ Partial Class FrmMAin
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Panel1)
         Me.GroupBox4.Controls.Add(Me.Label6)
         Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.Label4)
@@ -317,17 +329,27 @@ Partial Class FrmMAin
         Me.GroupBox4.Controls.Add(Me.TxtAct3)
         Me.GroupBox4.Controls.Add(Me.TxtAct2)
         Me.GroupBox4.Controls.Add(Me.TxtAct1)
-        Me.GroupBox4.Location = New System.Drawing.Point(20, 115)
+        Me.GroupBox4.Location = New System.Drawing.Point(20, 97)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(361, 188)
+        Me.GroupBox4.Size = New System.Drawing.Size(361, 206)
         Me.GroupBox4.TabIndex = 14
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Actions"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label8.Location = New System.Drawing.Point(18, 26)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(78, 13)
+        Me.Label8.TabIndex = 27
+        Me.Label8.Text = "^ = Control key"
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(87, 109)
+        Me.Label6.Location = New System.Drawing.Point(40, 120)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(44, 13)
         Me.Label6.TabIndex = 25
@@ -336,7 +358,7 @@ Partial Class FrmMAin
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(87, 149)
+        Me.Label7.Location = New System.Drawing.Point(40, 160)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(44, 13)
         Me.Label7.TabIndex = 26
@@ -345,7 +367,7 @@ Partial Class FrmMAin
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(87, 25)
+        Me.Label4.Location = New System.Drawing.Point(40, 36)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 21
@@ -354,7 +376,7 @@ Partial Class FrmMAin
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(87, 65)
+        Me.Label5.Location = New System.Drawing.Point(40, 76)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 13)
         Me.Label5.TabIndex = 22
@@ -362,7 +384,7 @@ Partial Class FrmMAin
         '
         'TxtAct4
         '
-        Me.TxtAct4.Location = New System.Drawing.Point(134, 142)
+        Me.TxtAct4.Location = New System.Drawing.Point(87, 153)
         Me.TxtAct4.Name = "TxtAct4"
         Me.TxtAct4.Size = New System.Drawing.Size(68, 20)
         Me.TxtAct4.TabIndex = 24
@@ -370,7 +392,7 @@ Partial Class FrmMAin
         '
         'TxtAct3
         '
-        Me.TxtAct3.Location = New System.Drawing.Point(134, 104)
+        Me.TxtAct3.Location = New System.Drawing.Point(87, 115)
         Me.TxtAct3.Name = "TxtAct3"
         Me.TxtAct3.Size = New System.Drawing.Size(68, 20)
         Me.TxtAct3.TabIndex = 23
@@ -378,7 +400,7 @@ Partial Class FrmMAin
         '
         'TxtAct2
         '
-        Me.TxtAct2.Location = New System.Drawing.Point(134, 62)
+        Me.TxtAct2.Location = New System.Drawing.Point(87, 73)
         Me.TxtAct2.Name = "TxtAct2"
         Me.TxtAct2.Size = New System.Drawing.Size(67, 20)
         Me.TxtAct2.TabIndex = 22
@@ -386,7 +408,7 @@ Partial Class FrmMAin
         '
         'TxtAct1
         '
-        Me.TxtAct1.Location = New System.Drawing.Point(134, 22)
+        Me.TxtAct1.Location = New System.Drawing.Point(87, 33)
         Me.TxtAct1.Name = "TxtAct1"
         Me.TxtAct1.Size = New System.Drawing.Size(67, 20)
         Me.TxtAct1.TabIndex = 21
@@ -505,6 +527,105 @@ Partial Class FrmMAin
         'TmrRefreshGUI
         '
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label9.Location = New System.Drawing.Point(18, 46)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(59, 13)
+        Me.Label9.TabIndex = 28
+        Me.Label9.Text = "% = Alt key"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label10.Location = New System.Drawing.Point(18, 6)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(66, 13)
+        Me.Label10.TabIndex = 29
+        Me.Label10.Text = "+ = Shift key"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label11.Location = New System.Drawing.Point(18, 66)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(95, 13)
+        Me.Label11.TabIndex = 30
+        Me.Label11.Text = "{BS} = Backspace"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label12.Location = New System.Drawing.Point(18, 86)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(120, 13)
+        Me.Label12.TabIndex = 31
+        Me.Label12.Text = "{F5} = F5 (others similar)"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label13.Location = New System.Drawing.Point(18, 106)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(107, 13)
+        Me.Label13.TabIndex = 31
+        Me.Label13.Text = "{HOME} = Home key"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label14.Location = New System.Drawing.Point(18, 126)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(85, 13)
+        Me.Label14.TabIndex = 31
+        Me.Label14.Text = "{UP} = Up arrow"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label15.Location = New System.Drawing.Point(18, 146)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(117, 13)
+        Me.Label15.TabIndex = 31
+        Me.Label15.Text = "{PGDN} = Page Down "
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.DarkSeaGreen
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Indigo
+        Me.LinkLabel1.Location = New System.Drawing.Point(124, 159)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(30, 13)
+        Me.LinkLabel1.TabIndex = 13
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "more"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.DimGray
+        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label15)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label14)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Label13)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Location = New System.Drawing.Point(185, 16)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(168, 181)
+        Me.Panel1.TabIndex = 32
+        '
         'FrmMAin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -547,6 +668,8 @@ Partial Class FrmMAin
         Me.P2.PerformLayout()
         Me.P1.ResumeLayout(False)
         Me.P1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -598,4 +721,14 @@ Partial Class FrmMAin
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TmrRefreshGUI As Timer
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Panel1 As Panel
 End Class

@@ -22,3 +22,14 @@ Z:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debu
 Z:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Comnz.FrmAbout.resources
 C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Comnz.FrmAbout.resources
 C:\DRPBX\Dropbox\Development\VB14\Button Receiver UDP\Receiver\Receiver\obj\Debug\Comnz.FrmMAin.resources
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\bin\Debug\Comnz.exe
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\bin\Debug\Comnz.pdb
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\bin\Debug\Comnz.xml
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.vbprojAssemblyReference.cache
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.FrmAbout.resources
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.FrmMAin.resources
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.Resources.resources
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.vbproj.GenerateResource.cache
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.exe
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.xml
+Z:\DRPBX\Dropbox\Development\VB14\Comnz\Comnz\Receiver\obj\Debug\Comnz.pdb

@@ -1,5 +1,8 @@
 ﻿Public Class FrmAbout
     Private Sub FrmAbout_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.MaximumSize = Me.Size
+        Me.MinimumSize = Me.Size
+
         Label4.Text = Application.ProductVersion
         Me.Top = FrmMAin.Top + ((FrmMAin.Height - Me.Height) / 2)
         Me.Left = FrmMAin.Left + ((FrmMAin.Width - Me.Width) / 2)

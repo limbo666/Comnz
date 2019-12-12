@@ -168,6 +168,13 @@ Public Class FrmMAin
         SaveSetting("Comnz", "Settings", "StartWithWindows", CheckBox3.Checked)
         SaveSetting("Comnz", "Settings", "LastTabStanting", LastTabStanding)
 
+
+        SaveSetting("Comnz", "Settings", "TxtAct1", TxtAct1.Text)
+        SaveSetting("Comnz", "Settings", "TxtAct2", TxtAct2.Text)
+        SaveSetting("Comnz", "Settings", "TxtAct3", TxtAct3.Text)
+        SaveSetting("Comnz", "Settings", "TxtAct4", TxtAct4.Text)
+
+
     End Sub
 
     Sub LoadValues()
@@ -175,25 +182,18 @@ Public Class FrmMAin
         Me.Left = GetSetting("Comnz", "Settings", "WindowLeft", 100)
         If Me.Left < 0 Then Me.Left = 100
         If Me.Top < 0 Then Me.Top = 100
-
         CheckBox4.Checked = GetSetting("Comnz", "Settings", "StartHidden", False)
         If CheckBox4.Checked = True Then
             Me.Hide()
             Me.ShowInTaskbar = False
         End If
-
         TxtID.Text = GetSetting("Comnz", "Settings", "ID", "AA111")
         F_ID = TxtID.Text
         chkBxServer.Checked = GetSetting("Comnz", "Settings", "Enabled", False)
-
-
         updnPort.Value = GetSetting("Comnz", "Settings", "LocalServerPort", 55155)
         LocalServerPort = updnPort.Value
-
         CheckBox2.Checked = GetSetting("Comnz", "Settings", "LogReceived", False)
-
         CheckBox3.Checked = GetSetting("Comnz", "Settings", "StartWithWindows", False)
-
         LastTabStanding = GetSetting("Comnz", "Settings", "LastTabStanting", 1)
         If LastTabStanding = 1 Then
             Pnl2.Visible = True
@@ -202,6 +202,15 @@ Public Class FrmMAin
             Pnl2.Visible = False
             Pnl1.Visible = True
         End If
+
+
+        TxtAct1.Text = GetSetting("Comnz", "Settings", "TxtAct1", "^c")
+        TxtAct2.Text = GetSetting("Comnz", "Settings", "TxtAct2", "^v")
+        TxtAct3.Text = GetSetting("Comnz", "Settings", "TxtAct3", "^x")
+        TxtAct4.Text = GetSetting("Comnz", "Settings", "TxtAct4", "^a")
+
+
+
         NormalizePs()
     End Sub
 
@@ -416,5 +425,17 @@ Public Class FrmMAin
     Private Sub Lnk3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Lnk3.LinkClicked
         FrmAbout.ShowDialog()
         NormalizePs()
+    End Sub
+
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Process.Start("http://bit.ly/38xdJa4")
+    End Sub
+
+    Private Sub P2_Paint(sender As Object, e As PaintEventArgs) Handles P2.Paint
+
     End Sub
 End Class

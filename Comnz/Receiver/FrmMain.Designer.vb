@@ -52,7 +52,16 @@ Partial Class FrmMAin
         Me.Pnl2 = New System.Windows.Forms.Panel()
         Me.Pnl1 = New System.Windows.Forms.Panel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -72,15 +81,6 @@ Partial Class FrmMAin
         Me.P1 = New System.Windows.Forms.Panel()
         Me.Lnk1 = New System.Windows.Forms.LinkLabel()
         Me.TmrRefreshGUI = New System.Windows.Forms.Timer(Me.components)
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.updnPort, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -90,12 +90,12 @@ Partial Class FrmMAin
         Me.Pnl2.SuspendLayout()
         Me.Pnl1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.P5.SuspendLayout()
         Me.P4.SuspendLayout()
         Me.P3.SuspendLayout()
         Me.P2.SuspendLayout()
         Me.P1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'updnPort
@@ -313,9 +313,9 @@ Partial Class FrmMAin
         Me.Pnl1.BackColor = System.Drawing.Color.Gray
         Me.Pnl1.Controls.Add(Me.GroupBox4)
         Me.Pnl1.Controls.Add(Me.GroupBox3)
-        Me.Pnl1.Location = New System.Drawing.Point(102, 3)
+        Me.Pnl1.Location = New System.Drawing.Point(107, 3)
         Me.Pnl1.Name = "Pnl1"
-        Me.Pnl1.Size = New System.Drawing.Size(396, 317)
+        Me.Pnl1.Size = New System.Drawing.Size(405, 316)
         Me.Pnl1.TabIndex = 15
         '
         'GroupBox4
@@ -336,6 +336,55 @@ Partial Class FrmMAin
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Actions"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.DimGray
+        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label15)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label14)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Label13)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Location = New System.Drawing.Point(185, 16)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(168, 181)
+        Me.Panel1.TabIndex = 32
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.DarkSeaGreen
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Indigo
+        Me.LinkLabel1.Location = New System.Drawing.Point(124, 159)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(30, 13)
+        Me.LinkLabel1.TabIndex = 13
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "more"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label10.Location = New System.Drawing.Point(18, 6)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(66, 13)
+        Me.Label10.TabIndex = 29
+        Me.Label10.Text = "+ = Shift key"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label15.Location = New System.Drawing.Point(18, 146)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(117, 13)
+        Me.Label15.TabIndex = 31
+        Me.Label15.Text = "{PGDN} = Page Down "
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -345,6 +394,56 @@ Partial Class FrmMAin
         Me.Label8.Size = New System.Drawing.Size(78, 13)
         Me.Label8.TabIndex = 27
         Me.Label8.Text = "^ = Control key"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label14.Location = New System.Drawing.Point(18, 126)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(85, 13)
+        Me.Label14.TabIndex = 31
+        Me.Label14.Text = "{UP} = Up arrow"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label9.Location = New System.Drawing.Point(18, 46)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(59, 13)
+        Me.Label9.TabIndex = 28
+        Me.Label9.Text = "% = Alt key"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label13.Location = New System.Drawing.Point(18, 106)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(107, 13)
+        Me.Label13.TabIndex = 31
+        Me.Label13.Text = "{HOME} = Home key"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label11.Location = New System.Drawing.Point(18, 66)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(95, 13)
+        Me.Label11.TabIndex = 30
+        Me.Label11.Text = "{BS} = Backspace"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.DarkSeaGreen
+        Me.Label12.Location = New System.Drawing.Point(18, 86)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(120, 13)
+        Me.Label12.TabIndex = 31
+        Me.Label12.Text = "{F5} = F5 (others similar)"
         '
         'Label6
         '
@@ -527,105 +626,6 @@ Partial Class FrmMAin
         'TmrRefreshGUI
         '
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label9.Location = New System.Drawing.Point(18, 46)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(59, 13)
-        Me.Label9.TabIndex = 28
-        Me.Label9.Text = "% = Alt key"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label10.Location = New System.Drawing.Point(18, 6)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(66, 13)
-        Me.Label10.TabIndex = 29
-        Me.Label10.Text = "+ = Shift key"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label11.Location = New System.Drawing.Point(18, 66)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(95, 13)
-        Me.Label11.TabIndex = 30
-        Me.Label11.Text = "{BS} = Backspace"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label12.Location = New System.Drawing.Point(18, 86)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(120, 13)
-        Me.Label12.TabIndex = 31
-        Me.Label12.Text = "{F5} = F5 (others similar)"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label13.Location = New System.Drawing.Point(18, 106)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(107, 13)
-        Me.Label13.TabIndex = 31
-        Me.Label13.Text = "{HOME} = Home key"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label14.Location = New System.Drawing.Point(18, 126)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(85, 13)
-        Me.Label14.TabIndex = 31
-        Me.Label14.Text = "{UP} = Up arrow"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label15.Location = New System.Drawing.Point(18, 146)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(117, 13)
-        Me.Label15.TabIndex = 31
-        Me.Label15.Text = "{PGDN} = Page Down "
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.DarkSeaGreen
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Indigo
-        Me.LinkLabel1.Location = New System.Drawing.Point(124, 159)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(30, 13)
-        Me.LinkLabel1.TabIndex = 13
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "more"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.DimGray
-        Me.Panel1.Controls.Add(Me.LinkLabel1)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Location = New System.Drawing.Point(185, 16)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(168, 181)
-        Me.Panel1.TabIndex = 32
-        '
         'FrmMAin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -658,6 +658,8 @@ Partial Class FrmMAin
         Me.Pnl1.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.P5.ResumeLayout(False)
         Me.P5.PerformLayout()
         Me.P4.ResumeLayout(False)
@@ -668,8 +670,6 @@ Partial Class FrmMAin
         Me.P2.PerformLayout()
         Me.P1.ResumeLayout(False)
         Me.P1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

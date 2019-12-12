@@ -1,4 +1,4 @@
-print("Starting")
+print("starting system")
 wifi.setmode(wifi.STATION) 
 wifi.sta.autoconnect(1)
 station_cfg={} 
@@ -8,6 +8,43 @@ station_cfg.save=true
 wifi.sta.config(station_cfg) 
 wifi.sta.connect()
 
+rounds=0
+function confirm(output)
+if ConfTmr ~=nil then 
+	ConfTmr:stop() -- stop imer before make new action to aviod endless loop
+end 
+ConfTmr = tmr.create()
+ConfTmr:register(50, tmr.ALARM_AUTO, function (t)
+	--tmr.alarm(2, 50, 1, function() 
+		if rounds <10 then
+			rounds= rounds+1
+			if (rounds% 2 == 0) then
+				if output=="1" then
+					gpio.write(5,1)
+					--ws2812.write(string.char(0, 0, 200)) 
+				elseif output=="2" then
+					--ws2812.write(string.char(100, 100, 100)) 
+					gpio.write(6,1)
+				elseif output=="-1" then
+					gpio.write(5,1)
+					gpio.write(6,1)
+				end
+			else
+		gpio.write(5,0)
+		gpio.write(6,0)
+				--ws2812.write(string.char(0, 0, 0)) 
+			end 
+		else
+		gpio.write(5,0)
+		gpio.write(6,0)
+		--	ws2812.write(string.char(0, 0, 0)) 
+			rounds= 0
+			ConfTmr:stop()				
+		end 	
+	end)
+ConfTmr:start()
+end 
+
 gpio.mode(5, gpio.OUTPUT)
 gpio.mode(6, gpio.OUTPUT)
 gpio.write(5,1)
@@ -15,13 +52,14 @@ gpio.write(6,1)
 
 udpPort=55155
 
-print("Waiting for IP address")
+print("waiting for IP address")
 IPtmr = tmr.create()
 IPtmr:register(100, tmr.ALARM_AUTO, function (t)
 	print(".")
 	MyIP=wifi.sta.getip()
 	if MyIP~= nil then
-		print("My IP is: "..MyIP)
+		print("my IP is: "..MyIP)
+		confirm("-1") -- visual indication on IP connection on both butons
 		BroadcastAddr= wifi.sta.getbroadcast()
 		IPtmr:stop()
 		gpio.write(5,0)
@@ -56,12 +94,12 @@ ANAtmr:register(100, tmr.ALARM_AUTO, function (t)
 		--print(val)
 		if val <930 and val>890 then
 			-- button 1
-			print("Button 1")
+			print("pressed button 1")
 			keyz=1
 			gpio.write(5,1)
 		elseif val <890 and val>820 then
 			-- button 2
-			print("Button 2")
+			print("pressed button 2")
 			keyz=2
 			gpio.write(6,1)
 		end 
@@ -73,36 +111,8 @@ ANAtmr:register(100, tmr.ALARM_AUTO, function (t)
 end)
 ANAtmr:start()
 
-rounds=0
-function confirm(output)
-ConfTmr = tmr.create()
-ConfTmr:register(20, tmr.ALARM_AUTO, function (t)
-	--tmr.alarm(2, 50, 1, function() 
-		if rounds <20 then
-			rounds= rounds+1
-			if (rounds% 2 == 0) then
-				if output=="1" then
-					gpio.write(5,1)
-					--ws2812.write(string.char(0, 0, 200)) 
-				elseif output=="2" then
-					--ws2812.write(string.char(100, 100, 100)) 
-					gpio.write(6,1)
-				end
-			else
-		gpio.write(5,0)
-		gpio.write(6,0)
-				--ws2812.write(string.char(0, 0, 0)) 
-			end 
-		else
-		gpio.write(5,0)
-		gpio.write(6,0)
-		--	ws2812.write(string.char(0, 0, 0)) 
-			rounds= 0
-			ConfTmr:stop()				
-		end 	
-	end)
-ConfTmr:start()
-end 
+
+
 
 
 

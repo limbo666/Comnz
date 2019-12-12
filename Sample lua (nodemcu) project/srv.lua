@@ -4,7 +4,7 @@ udpSocket:listen(udpPort)
 udpSocket:on("receive", function(s, data, port, ip)
  --	print(data)
 	if data~=nil then
-		print(data)
+		print('data:'..data)
 		Rspnd=string.find(data,"Comnz")
 		if Rspnd~=nil then
 			Rspnd=(string.sub(data,string.find(data,"Comnz") +7,string.find(data,"Comnz")+10))	
@@ -22,4 +22,4 @@ udpSocket:on("receive", function(s, data, port, ip)
 	end 
 end)
 port, ip = udpSocket:getaddr()
-print("UDP server waiting on port "..udpPort)
+print("started UDP server on port "..udpPort)

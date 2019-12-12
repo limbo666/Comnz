@@ -39,6 +39,7 @@ Public Class FrmMAin
             Dim e2 As Encoding = Encoding.GetEncoding(28597) ' greek enconding 
             ReceivedText = e2.GetString(RCVbytes)
             StLbl2.BackColor = Color.FromArgb(0, 54, 200)
+            NTIcn.Icon = FrmAbout.Icon
             '  TmrClearRX.Enabled = False 
             TmrClearRX.Enabled = True
         Catch ex As Exception
@@ -93,31 +94,30 @@ Public Class FrmMAin
             ' SendKeys.Send("^c")
             Try
                 SendKeys.Send(TxtAct1.Text)
-                StLbl3.Text = TxtAct1.Text '"Copy"
+                StLbl3.Text = TxtAct1.Text 'Default is "Copy" (^c)
             Catch ex As Exception
 
             End Try
 
         ElseIf ComIndex = 2 Then ' PASTE
             '  SendKeys.Send("^v")
-            '    StLbl3.Text = "Paste"
             Try
                 SendKeys.Send(TxtAct2.Text)
-                StLbl3.Text = TxtAct2.Text
+                StLbl3.Text = TxtAct2.Text 'Default is "Paste" (^v)
             Catch ex As Exception
 
             End Try
         ElseIf ComIndex = 3 Then ' CUT
             Try
                 SendKeys.Send(TxtAct3.Text)
-                StLbl3.Text = TxtAct3.Text
+                StLbl3.Text = TxtAct3.Text 'Default is "Cut" (^x)
             Catch ex As Exception
 
             End Try
         ElseIf ComIndex = 4 Then
             Try
                 SendKeys.Send(TxtAct4.Text)
-                StLbl3.Text = TxtAct4.Text
+                StLbl3.Text = TxtAct4.Text 'Default is "Select All" (^a)
             Catch ex As Exception
 
             End Try
@@ -257,6 +257,8 @@ Public Class FrmMAin
     Private Sub TmrClearRX_Tick(sender As Object, e As EventArgs) Handles TmrClearRX.Tick
         StLbl2.BackColor = Color.FromArgb(224, 224, 224)
         TmrClearRX.Enabled = False
+
+        NTIcn.Icon = Me.Icon
     End Sub
 
     Private Sub TmrClearStatusLbl_Tick(sender As Object, e As EventArgs) Handles TmrClearStatusLbl.Tick
@@ -368,14 +370,8 @@ Public Class FrmMAin
     End Sub
 
     Private Sub Form1_MouseHover(sender As Object, e As EventArgs) Handles Me.MouseHover
-
         NormalizePs()
-
-
     End Sub
-
-
-
     Private Sub Lnk5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Lnk5.LinkClicked
         Me.Close()
 
